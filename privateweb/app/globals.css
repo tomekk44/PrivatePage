@@ -11,6 +11,10 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-BlueNN: #093354;
+ --color-cream-1: #fffaf0; /* najjaśniejszy */
+  --color-cream-2: #f7f1e3; /* jasny krem */
+  --color-cream-3: #efe4cc; /* średni krem */
+  --color-cream-4: #e6d9bb; /* najciemniejszy krem */
 }
 
 body {

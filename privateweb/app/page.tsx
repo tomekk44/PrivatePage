@@ -1,13 +1,17 @@
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 text-foreground">
       {/* HERO */}
-<section className="flex flex-col items-center justify-center text-center py-32 px-6 bg-white shadow-sm">
-    <img
+<section className="flex flex-col items-center justify-center text-center py-32 px-6 bg-cream-1 shadow-sm">
+     <Image
     src="/korona.png"
     alt="Korona"
+    width={200}
+    height={200}
     className="w-24 h-auto mb-6 md:w-32"
+    priority
   />
   <h1 className="text-5xl font-bold mb-4 text-BlueNN">Tomasz Kwiek</h1>
 
@@ -39,7 +43,35 @@ export default function Home() {
     </a>
   </div>
 </section>
+      {/* O MNIE */}
+<section id="omnie" className="py-24 px-6 bg-cream-2">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-semibold mb-6 text-BlueNN">O mnie</h2>
+    ...
+  </div>
+</section>
 
+      {/* Media Społecznościowe */}
+<section id="social" className="py-24 px-6 bg-cream-3">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-semibold mb-6 text-BlueNN">Media Społecznościowe</h2>
+    ...
+  </div>
+</section>
+<section id="kontakt" className="py-24 px-6 bg-cream-4">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-semibold mb-6 text-BlueNN">Kontakt</h2>
+
+    <p className="text-lg text-BlueNN/80 mb-4">
+      Masz pytania? Skontaktuj się z nami:
+    </p>
+
+    <ul className="text-lg text-BlueNN">
+      <li>📧 Email: <strong>kontakt@tomaszkwiek.pl</strong></li>
+      <li>📍 Adres: <strong>Katowice, Polska</strong></li>
+    </ul>
+  </div>
+</section>
 
       {/* O NAS
       <section className="py-24 px-6 max-w-4xl mx-auto">
@@ -73,19 +105,7 @@ export default function Home() {
       </section>
 */}
       {/* KONTAKT */}
-      <section id="kontakt" className="py-24 px-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6">Kontakt</h2>
 
-        <p className="text-lg mb-4">
-          Masz pytania? Skontaktuj się z nami:
-        </p>
-
-        <ul className="text-lg">
-          <li>📞 Telefon: <strong>123 456 789</strong></li>
-          <li>📧 Email: <strong>kontakt@twojafirma.pl</strong></li>
-          <li>📍 Adres: <strong>Kraków, Polska</strong></li>
-        </ul>
-      </section>
     </main>
   );
 }
