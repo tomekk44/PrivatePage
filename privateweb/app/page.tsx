@@ -45,66 +45,126 @@ export default function Home() {
 </section>
       {/* O MNIE */}
 <section id="omnie" className="py-24 px-6 bg-cream-2">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl font-semibold mb-6 text-BlueNN">O mnie</h2>
-    ...
+  <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-start gap-8">
+
+    {/* TEKST PO LEWEJ */}
+    <div className="flex-1 text-BlueNN">
+      <h2 className="text-3xl font-semibold mb-6">O mnie</h2>
+
+      <p className="text-lg mb-4">
+       
+      </p>
+
+      <p className="text-lg mb-4">
+        
+      </p>
+
+      <p className="text-lg">
+        Jeśli chcesz dowiedzieć się więcej — zapraszam do kontaktu!
+      </p>
+    </div>
+
+    {/* ZDJĘCIE PO PRAWEJ */}
+    <div className="w-full md:w-1/3 flex justify-center md:justify-end">
+<Image
+  src="/portret.jpg"
+  alt="Portret"
+  width={400}
+  height={500}
+  className="rounded-xl shadow-lg h-auto w-auto"
+/>
+    </div>
+
   </div>
 </section>
 
-      {/* Media Społecznościowe */}
-<section id="social" className="py-24 px-6 bg-cream-3">
+<section id="aktywnosc" className="py-24 px-6 bg-cream-3">
   <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl font-semibold mb-6 text-BlueNN">Media Społecznościowe</h2>
-    ...
-  </div>
-</section>
-<section id="kontakt" className="py-24 px-6 bg-cream-4">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl font-semibold mb-6 text-BlueNN">Kontakt</h2>
+    <h2 className="text-3xl font-semibold mb-10 text-BlueNN">Moja aktywność</h2>
 
-    <p className="text-lg text-BlueNN/80 mb-4">
-      Masz pytania? Skontaktuj się z nami:
+    <p className="text-lg text-BlueNN/80 leading-relaxed">
+      Tutaj możesz dodać opis swojej działalności, projektów, wydarzeń, w których
+      bierzesz udział, albo krótkie podsumowanie tego, czym aktualnie się zajmujesz.
+      Może to być również sekcja z aktualnościami lub planami na przyszłość.
     </p>
-
-    <ul className="text-lg text-BlueNN">
-      <li>📧 Email: <strong>kontakt@tomaszkwiek.pl</strong></li>
-      <li>📍 Adres: <strong>Katowice, Polska</strong></li>
-    </ul>
   </div>
 </section>
 
-      {/* O NAS
-      <section className="py-24 px-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6">O nas</h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Jesteśmy zespołem specjalistów z wieloletnim doświadczeniem. 
-          Stawiamy na jakość, terminowość i indywidualne podejście do klienta.
+<section id="kontakt-social" className="py-24 px-6 bg-cream-4">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-semibold mb-10 text-BlueNN">Kontakt</h2>
+        <p className="text-lg text-BlueNN/80 mb-4">
+          Masz pytania? Skontaktuj się ze mną:
         </p>
-      </section> */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-      {/* OFERTA 
-      <section className="py-24 px-6 bg-white shadow-inner">
-        <h2 className="text-3xl font-semibold text-center mb-12">Oferta</h2>
+      {/* LEWA KOLUMNA — SOCIAL MEDIA */}
+      <div>
+        <h3 className="text-2xl font-semibold mb-6 text-BlueNN">Media Społecznościowe</h3>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="p-6 bg-gray-100 rounded-lg shadow">
-            <h3 className="text-xl font-bold mb-2">Usługa 1</h3>
-            <p className="text-gray-700">Krótki opis usługi.</p>
-          </div>
+        <div className="flex flex-col gap-6">
 
-          <div className="p-6 bg-gray-100 rounded-lg shadow">
-            <h3 className="text-xl font-bold mb-2">Usługa 2</h3>
-            <p className="text-gray-700">Krótki opis usługi.</p>
-          </div>
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/profile.php?id=61582362362366"
+            target="_blank"
+            className="flex items-center gap-4 p-5 bg-white rounded-xl shadow-md hover:shadow-lg transition border border-gray-200"
+          >
+            <Image
+              src="/fb.svg"
+              alt="Facebook"
+              className="w-12 h-12"
+              width={200}
+              height={200}
+            />
+            <div>
+              <h4 className="text-xl font-semibold text-BlueNN">Facebook</h4>
+              <p className="text-BlueNN/70 text-sm">Obserwuj mnie na Facebooku</p>
+            </div>
+          </a>
 
-          <div className="p-6 bg-gray-100 rounded-lg shadow">
-            <h3 className="text-xl font-bold mb-2">Usługa 3</h3>
-            <p className="text-gray-700">Krótki opis usługi.</p>
-          </div>
+          {/* Instagram */}
+          <a
+            href="https://instagram.com/twojprofil"
+            target="_blank"
+            className="flex items-center gap-4 p-5 bg-white rounded-xl shadow-md hover:shadow-lg transition border border-gray-200"
+          >
+            <Image
+              src="/ig.svg"
+              alt="Instagram"
+              className="w-12 h-12"
+              width={200}
+              height={200}
+            />
+            <div>
+              <h4 className="text-xl font-semibold text-BlueNN">Instagram</h4>
+              <p className="text-BlueNN/70 text-sm">Zobacz moje zdjęcia i relacje</p>
+            </div>
+          </a>
+
         </div>
-      </section>
-*/}
-      {/* KONTAKT */}
+      </div>
+
+      {/* PRAWA KOLUMNA — KONTAKT */}
+      <div>
+        <h3 className="text-2xl font-semibold mb-6 text-BlueNN">Kontakt</h3>
+
+
+
+        <ul className="text-lg text-BlueNN space-y-2">
+          <li>📧 Email: <strong>kontakt@tomaszkwiek.pl</strong></li>
+          <li>📍 Adres: <strong>Katowice, Polska</strong></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
     </main>
   );
