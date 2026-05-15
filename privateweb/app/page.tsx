@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Aktywnosc from "./components/Aktywnosc";
 
 export default function Home() {
   return (
@@ -79,18 +80,10 @@ export default function Home() {
 </section>
 
 <section id="aktywnosc" className="py-24 px-6 bg-cream-3">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl font-semibold mb-10 text-BlueNN">Moja aktywność</h2>
-
-    <p className="text-lg text-BlueNN/80 leading-relaxed">
-      Tutaj możesz dodać opis swojej działalności, projektów, wydarzeń, w których
-      bierzesz udział, albo krótkie podsumowanie tego, czym aktualnie się zajmujesz.
-      Może to być również sekcja z aktualnościami lub planami na przyszłość.
-    </p>
-  </div>
+  <Aktywnosc />
 </section>
 
-<section id="kontakt-social" className="py-24 px-6 bg-cream-4">
+<section id="kontakt-social" className="py-24 px-6 bg-goldNN">
   <div className="max-w-4xl mx-auto">
     <h2 className="text-3xl font-semibold mb-10 text-BlueNN">Kontakt</h2>
         <p className="text-lg text-BlueNN/80 mb-4">
