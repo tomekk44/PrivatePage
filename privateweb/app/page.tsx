@@ -1,32 +1,56 @@
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900">
+    <main className="min-h-screen bg-gray-50 text-foreground">
       {/* HERO */}
-      <section className="flex flex-col items-center justify-center text-center py-32 px-6 bg-white shadow-sm">
-        <h1 className="text-5xl font-bold mb-4">Twoja Firma</h1>
-        <p className="text-xl text-gray-600 max-w-2xl">
-          Profesjonalne usługi dla klientów indywidualnych i biznesowych.
-        </p>
-        <a
-          href="#kontakt"
-          className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-        >
-          Skontaktuj się
-        </a>
-      </section>
+<section className="flex flex-col items-center justify-center text-center py-32 px-6 bg-white shadow-sm">
+    <img
+    src="/korona.png"
+    alt="Korona"
+    className="w-24 h-auto mb-6 md:w-32"
+  />
+  <h1 className="text-5xl font-bold mb-4 text-BlueNN">Tomasz Kwiek</h1>
 
-      {/* O NAS */}
+  <p className="text-xl text-BlueNN/80 max-w-2xl">
+    „Wolność daje wybór, własność daje niezależność, sprawiedliwość daje równowagę.”
+  </p>
+
+  {/* Przyciski w jednej linii */}
+  <div className="flex flex-col md:flex-row gap-4 mt-8">
+    <a
+      href="#omnie"
+      className="px-6 py-3 bg-BlueNN text-white rounded-lg hover:bg-BlueNN/80 transition"
+    >
+      O mnie
+    </a>
+
+    <a
+      href="#social"
+      className="px-6 py-3 bg-BlueNN text-white rounded-lg hover:bg-BlueNN/80 transition"
+    >
+      Media Społecznościowe
+    </a>
+
+    <a
+      href="#kontakt"
+      className="px-6 py-3 bg-BlueNN text-white rounded-lg hover:bg-BlueNN/80 transition"
+    >
+      Skontaktuj się
+    </a>
+  </div>
+</section>
+
+
+      {/* O NAS
       <section className="py-24 px-6 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6">O nas</h2>
         <p className="text-lg text-gray-700 leading-relaxed">
           Jesteśmy zespołem specjalistów z wieloletnim doświadczeniem. 
           Stawiamy na jakość, terminowość i indywidualne podejście do klienta.
         </p>
-      </section>
+      </section> */}
 
-      {/* OFERTA */}
+      {/* OFERTA 
       <section className="py-24 px-6 bg-white shadow-inner">
         <h2 className="text-3xl font-semibold text-center mb-12">Oferta</h2>
 
@@ -47,7 +71,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+*/}
       {/* KONTAKT */}
       <section id="kontakt" className="py-24 px-6 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6">Kontakt</h2>
