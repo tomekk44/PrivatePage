@@ -13,23 +13,23 @@ export default function Aktywnosc() {
     },
     {
       src: "/Action/projekt27.jpg",
-      title: "projekt27",
-      desc: "Opis drugiego wydarzenia lub projektu.",
+      title: "Projekt 27",
+      desc: "Pomoc w organizacji panelu eksperckiego w temacie energetyki.",
     },
         {
       src: "/Action/dzienKobiet.jpg",
-      title: "dzienKobiet",
-      desc: "Opis drugiego wydarzenia lub projektu.",
+      title: "8 marca - Dzień Kobiet",
+      desc: "W dzień kobiet w symboliczny sposób dziękowaliśmy Paniom za ich codzienny trud, pracę oraz ogromny wkład w życie społeczne, rodzinne i zawodowe .",
     },
             {
       src: "/Action/1marca.jpg",
-      title: "dzienKobiet",
-      desc: "Opis drugiego wydarzenia lub projektu.",
+      title: "1 marca - Dzień Pamięci Żołnierzy Wyklętych",
+      desc: "Wzmacniajmy pamięć o tych, którzy w walce o suwerenność i niepodległość naszej Ojczyzny oddali swoje życie.",
     },
             {
       src: "/Action/rewerenudmKrk.jpg",
-      title: "dzienKobiet",
-      desc: "Opis drugiego wydarzenia lub projektu.",
+      title: "Referendum Kraków",
+      desc: "Referendum odwoławcze prezydenta miasta jest cennym narzędziem demokracji lokalnej, bo daje mieszkańcom realną możliwość skorygowania decyzji wyborczych i przypomina, że władza samorządowa zawsze powinna pozostawać pod bezpośrednią kontrolą obywateli..",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function Aktywnosc() {
   autoplay={{ delay: 3500, disableOnInteraction: false }}
   spaceBetween={30}
   slidesPerView={1}
-  className="rounded-xl shadow-xl  bg-(--color-goldNN) p-4"
+  className="rounded-xl shadow-xl bg-(--color-goldNN) p-4 relative pb-10"
 >
 
         {items.map((item, i) => (
@@ -63,7 +63,7 @@ export default function Aktywnosc() {
                 />
 
                 {/* OPIS — NIEBIESKI PANEL */}
-                <div className="absolute bottom-0 left-0 right-0 bg-BlueNN/70 backdrop-blur-sm text-white p-4 rounded-b-xl">
+<div className="absolute bottom-0 left-0 right-0 bg-BlueNN/70 backdrop-blur-sm text-white p-4 pb-8 rounded-b-xl">
                   <h3 className="text-xl font-semibold">{item.title}</h3>
                   <p className="text-sm opacity-90">{item.desc}</p>
                 </div>

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 text-foreground">
       {/* HERO */}
-<section className="flex flex-col items-center justify-center text-center py-32 px-6 bg-cream-1 shadow-sm">
+<section className="flex flex-col items-center justify-center text-center h-screen px-6 bg-cream-0 shadow-sm">
      <Image
     src="/korona.png"
     alt="Korona"
@@ -33,55 +33,73 @@ export default function Home() {
       href="#social"
       className="px-6 py-3 bg-BlueNN text-white rounded-lg hover:bg-BlueNN/80 transition"
     >
-      Media Społecznościowe
+      Moja aktywność
     </a>
 
     <a
       href="#kontakt"
       className="px-6 py-3 bg-BlueNN text-white rounded-lg hover:bg-BlueNN/80 transition"
     >
-      Skontaktuj się
+      Kontakt
     </a>
   </div>
 </section>
-      {/* O MNIE */}
-<section id="omnie" className="py-24 px-6 bg-cream-2">
-  <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-start gap-8">
 
-    {/* TEKST PO LEWEJ */}
-    <div className="flex-1 text-BlueNN">
+
+  <section id="omnie"  className="flex flex-col items-center justify-center text-center h-screen px-6 bg-cream-01 shadow-sm">
+
+  <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+    {/* TEKST OBOK ZDJĘCIA (GÓRA) */}
+    <div className="md:col-span-2 text-BlueNN text-justify">
       <h2 className="text-3xl font-semibold mb-6">O mnie</h2>
 
       <p className="text-lg mb-4">
-       
+        Urodzony na przełomie PRL i III RP w Katowicach. Całe życie związany z Katowicami i Górnym Śląskiem. Niedoszły historyk. Ostatecznie los zaprowadził mnie na Uniwersytet Ekonomiczny i studia na kierunkach Informatyka oraz Informatyka i Ekonometrii. 
       </p>
 
       <p className="text-lg mb-4">
-        
-      </p>
-
-      <p className="text-lg">
-        Jeśli chcesz dowiedzieć się więcej — zapraszam do kontaktu!
+        Zawodowo zajmuję się inżynierią systemów informatycznych oraz wytwarzaniem oprogramowania. Od czasów szkolnych interesuje mnie wykorzystanie współczesnych technologii w usprawnianiu wielu aspektów życia. Siedząc w licealnej ławce zastanawiałem się czemu do symulacji bitwy pod Grunwaldem nie używa się wyrenderowanych filmów, do nauki biologii cyfrowego ciała pozwalającego zajrzeć w głąb naszych organizmów. Na chemii czy fizyce zaprezentować omawiane procesy w bardziej plastyczny sposób, a na geografii zamiast czytać przejść się wirtualnie po omawianym miejscu.
       </p>
     </div>
 
-    {/* ZDJĘCIE PO PRAWEJ */}
-    <div className="w-full md:w-1/3 flex justify-center md:justify-end">
-<Image
-  src="/portret.jpg"
-  alt="Portret"
-  width={400}
-  height={500}
-  className="rounded-xl shadow-lg h-auto w-auto"
-/>
+    {/* ZDJĘCIE */}
+    <div className="md:col-span-1 flex justify-center md:justify-end">
+      <Image
+        src="/portret.jpg"
+        alt="Portret"
+        width={400}
+        height={500}
+        className="rounded-xl shadow-lg h-auto w-auto"
+      />
+    </div>
+
+    {/* DALSZA CZĘŚĆ TEKSTU POD ZDJĘCIEM – NA CAŁĄ SZEROKOŚĆ */}
+    <div className="md:col-span-3 text-BlueNN text-justify">
+      <p className="text-lg mb-4">
+        Wolności owiec od czasów studiów. Aktywnie zaangażowany od wiosny 2025. Skupiający się nie na rozwiązywaniu problemów globalnych, ale tych lokalnych, które są bliżej nas i które możemy rozwiązać. Dla wielu z nas to właśnie mała ojczyzna ma największe znaczenie, bo tu toczy się codzienne życie. Sprawy lokalne – bezpieczeństwo, drogi, szkoły, relacje sąsiedzkie – wpływają na nas bardziej bezpośrednio niż wielkie polityczne spory. To w najbliższym otoczeniu człowiek naprawdę widzi efekty działań i czuje, że ma realny wpływ na swoją przyszłość. Dlatego troska o małą ojczyznę często okazuje się ważniejsza niż odległe decyzje podejmowane na najwyższych szczeblach władzy.
+      </p>
+
+      <p className="text-lg">
+        Jeśli chcesz dowiedzieć się więcej – zapraszam do kontaktu!
+      </p>
     </div>
 
   </div>
 </section>
 
-<section id="aktywnosc" className="py-24 px-6 bg-cream-3">
+
+
+<section id="aktywnosc"  className="flex flex-col items-center justify-center text-center h-screen px-6 bg-cream-2 shadow-sm">
+
   <Aktywnosc />
 </section>
+
+<section id="omnie" className="py-24 px-6 bg-cream-3 ">
+
+</section>
+
+
 
 <section id="kontakt-social" className="py-24 px-6 bg-goldNN">
   <div className="max-w-4xl mx-auto">

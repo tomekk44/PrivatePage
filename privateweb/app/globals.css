@@ -14,10 +14,11 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-BlueNN: #093354;
+--color-cream-0: #fffdf4; /* najjaśniejszy, prawie biały */
 --color-cream-1: #fff9e6; /* bardzo jasny, ledwo złotawy */
 --color-cream-2: #ffefb8; /* jasny złoty pastel */
 --color-cream-3: #ffe58a; /* wyraźny złoty krem */
---color-goldNN: #fdcd1a; 
+--color-goldNN: #fdcd1a;  /* mocny złoty – zostaje bez zmian */
 
 }
 
@@ -34,4 +35,7 @@ body {
 
 .animate-fadeIn {
   animation: fadeIn 0.4s ease-out forwards;
+}
+.swiper-pagination {
+  bottom: 0 !important;
 }
